@@ -7,3 +7,21 @@
 [submodule "other external repos/IA-FIB"]
 	path = other external repos/IA-FIB
 	url = https://github.com/MrRobb/IA-FIB
+[submodule "other external repos/Practiques/IA"]
+	path = other external repos/Practiques/IA
+	url = https://github.com/JazZHermeS/IA
+[submodule "other external repos/Practiques/ia-carsharing"]
+	path = other external repos/Practiques/ia-carsharing
+	url = https://github.com/ajcabrera/ia-carsharing
+[submodule "other external repos/Practiques/LocalSearch_AI"]
+	path = other external repos/Practiques/LocalSearch_AI
+	url = https://github.com/adriacabeza/LocalSearch_AI
+[submodule "other external repos/Practiques/SBC-menu-IA"]
+	path = other external repos/Practiques/SBC-menu-IA
+	url = https://github.com/Rovi98/SBC-menu-IA
+[submodule "other external repos/Practiques/FIB-IA-P1-Azamon"]
+	path = other external repos/Practiques/FIB-IA-P1-Azamon
+	url = https://github.com/anamestre/FIB-IA-P1-Azamon
+[submodule "other external repos/Practiques/FIB-IA-P2-Museu"]
+	path = other external repos/Practiques/FIB-IA-P2-Museu
+	url = https://github.com/anamestre/FIB-IA-P2-Museu
