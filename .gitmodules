@@ -4,3 +4,6 @@
 [submodule "external repos/IA-FIB"]
 	path = external repos/IA-FIB
 	url = https://github.com/MrRobb/IA-FIB
+[submodule "other external repos/IA-FIB"]
+	path = other external repos/IA-FIB
+	url = https://github.com/MrRobb/IA-FIB
