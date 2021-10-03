@@ -1,3 +1,6 @@
 [submodule "Laboratori/practica busqueda/Problema IA 5/IA-Ex5"]
 	path = Laboratori/practica busqueda/Problema IA 5/IA-Ex5
 	url = https://github.com/aguizzo/IA-Ex5
+[submodule "external repos/IA-FIB"]
+	path = external repos/IA-FIB
+	url = https://github.com/MrRobb/IA-FIB
