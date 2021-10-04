@@ -28,3 +28,6 @@
 [submodule "other external repos/Practiques/FIB-IA-P3-Redflix"]
 	path = other external repos/Practiques/FIB-IA-P3-Redflix
 	url = https://github.com/anamestre/FIB-IA-P3-Redflix
+[submodule "Laboratori/practica busqueda/Problema IA 5/problema 5 sense fer/AIMAexample"]
+	path = Laboratori/practica busqueda/Problema IA 5/problema 5 sense fer/AIMAexample
+	url = https://github.com/bejar/AIMAexample
