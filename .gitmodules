@@ -31,3 +31,12 @@
 [submodule "Laboratori/practica busqueda/Problema IA 5/problema 5 sense fer/AIMAexample"]
 	path = Laboratori/practica busqueda/Problema IA 5/problema 5 sense fer/AIMAexample
 	url = https://github.com/bejar/AIMAexample
+[submodule "other external repos/Practiques/IA-FIB-mars"]
+	path = other external repos/Practiques/IA-FIB-mars
+	url = https://github.com/MrRobb/IA-FIB-mars
+[submodule "other external repos/Practiques/IA-FIB-diagnostics"]
+	path = other external repos/Practiques/IA-FIB-diagnostics
+	url = https://github.com/MrRobb/IA-FIB-diagnostics
+[submodule "other external repos/Practiques/IA-FIB-energy"]
+	path = other external repos/Practiques/IA-FIB-energy
+	url = https://github.com/MrRobb/IA-FIB-energy
