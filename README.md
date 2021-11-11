@@ -1,4 +1,5 @@
 # FIB-IA
+[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/latorware/FIB-IA.svg)](https://github.com/latorware/FIB-IA)
 
 ## Subject Webpages
 
