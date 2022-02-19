@@ -1,0 +1,125 @@
+ONTOLOGIA
+
+    PRIMER EXERCICI
+
+        - En aquest problema a l'ontologia inclourem tots els conceptes que formin part de l'entrada del problema, 
+            i també els que formin part de la solució. 
+
+        - Imatge. 
+
+        - De l'ontologia cal dir que existeixen diversos conceptes que comparteixen atributs o relacions, i per tant, 
+            a l'hora de decidir si es crea una subclasse o un atribut tipus, s'intentarà seguir la regla que es creen
+            subclasses quan una o varies tinguin atributs o relacions diferents. 
+
+        - També s'ha intentat seguir el diseny que recomana que les branques germanes de la taxonomia segueixin un nivell de
+            granularitat similar. 
+
+        - Els atributs minims per representar la informacio dita a l'enunciat són: (cursiva (p concret), Cursiva (p abstracte), CURSIVA (solucio abstracte))
+
+
+    SEGON EXERCICI
+
+        - Per resoldrel mitjançant classificacio heuristica necessitem identificar en el problema les diferents fases de la metodologia. 
+            Per començar, la solució que demana l'enunciat només pot ser una solucio concreta, ja que és impossible calcular ...
+            a nivell a  bstracte. 
+
+        - Comencem doncs, a identificar les fases: 
+
+            - El primer element son els problemes concrets que s'han de tractar. En aquest domini els problemes concrets estan definits
+                per la informacio detallada de...
+
+            - El segon element son els problemes abstractes, els quals estan definits per les n caracteristiques que
+            menciona l'enunciat (dir caracteristiques). 
+            
+                Per conectar els problemes concrets amb els abstractes necessitem definir les regles d'abstracció de dades. Per exemple: 
+
+            - El tercer element son les solucions abstractes... Per lligar els problemes asbtractes amb les solucions abstractes
+                necessitarem les regles d'associacio heurística, per exemple:   
+
+            - El quart i últim element son les solucions concretes. En aquest cas es tracte del calcul... Suposarem la existencia
+                de funcions que combinen la solucio abstracte amb dades del problema concret per extreure solucions concretes. Per exemple: 
+
+        
+    TERCER EXERCICI
+
+        - El grafic haura de tenir almenys dos grups de nodes. Els que corresponguin a característiques del problema abstracte, i 
+            els que corresponguin a caracteristiques de la solucio abstracte.
+            L'objectiu és construir una xarxa que conecti les caracteristiques del problema abstracte amb les característiques del
+            problema concret.
+            
+            Els nodes de l'esquerre representen caract problema abstracte, i els de la dreta caract. problema concret. 
+
+        - Una taula de probabilitat simplement ha d'assignar més probabilitat a valors més correlacionats entre grups de variables.
+            Per exemple, si escollim com a variable ... la qual depen de ... la taula de probabilitats serà... 
+
+
+
+PLANIFICACIO
+
+    PRIMER EXERCICI
+
+        - Existeixen moltes formes de crear aquest domini amb PDDL, però per tal de crear-lo correctament necessitem tenir en compte
+            diversos aspectes: 
+                
+                - Intentarem minimitar el nombre de operadors y el factor de ramificacio per tal de reduir l'exploracio dels operadors. 
+
+                - Evitarem usar operadors amb parametres similars. 
+
+                - Intentarem usar tipos en les variables per reduir la quantitat d'objectes que es comprovaran en les precondicions. 
+
+                - Intentarem usar el exists i forall, ja que tenen un impacte negatiu en el temps de computacio. 
+
+                - Al cap i a la fi el que es important és que el planificador sigui eficient, per tant si s'ha de fer el domini una
+                    mica més complex per eficiencia, es fa. 
+
+
+                (define (domain ...)
+                    (:requirements :adl :typing)
+
+                    (:types comensal silla mesa - object)
+
+                    (:predicates
+                        (necesita ?x - comensal ?y - comensal)
+                    )
+
+                    (:action ...
+                        :parameters (?c - comensal ?sl - silla ?ms - mesa ?sizq - silla ?sder - silla)
+
+                        :precondition (and ((forall (?c2 - comensal)(and(imply (necesita ?c ?c2) (or (colocado_en ?c2 ?sizq) (colocado_en ?c2 ?sder)))
+
+                        :effect (and (when (exists (?d - orientacion) (and (orientadaA ?d ?y) (peticionOrientacion ?d ?x))) (increase (assignadas_con_orientacion) 1))  
+
+
+
+                Aquesta solucio distingeix entre els tipus d'objectes...
+
+                S'han creat diversos predicats.
+
+                Pel que fa als operadors... Cal destacar que per reduir el calcula en les precondicions, posarem primer aquelles
+                    precondicions que facin un filtratge més ràpid dels objectes.
+
+
+        
+        SEGON EXERCICI
+
+            -  (define (problem ...)
+                    (:domain ...)
+
+                    (:objects Antonio Ainhoa Lola Lolo Esperanza Enrique Susana ManuManolito Susanita Jesus Quico - comensal)
+
+                    (:init
+                        (necesita Antonio Ainhoa) (necesita Lola Lolo) (necesita Esperanza Enrique)
+                    )
+
+                    (:goal (forall (?c2 - comensal) (colocado ?c2)))
+
+
+
+            - S'ha creat un objecte per cada... Els noms ajuden a l'identificacio, pero li son igual al planificador. 
+
+                A l'estat inicial, hi definim els predicats... 
+
+                Finalment a l'estat objectiu...
+
+
+        
