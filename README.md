@@ -3,5 +3,7 @@
 
 ## My projects
 [IA-Gasolina](https://github.com/latorware/IA-Gasolina)
+
 [IA_CLIPS-PracticaSBG](https://github.com/latorware/IA_CLIPS-PracticaSBG)
+
 [IA-FastForward-PracticaPlanificacio](https://github.com/latorware/IA-FastForward-PracticaPlanificacio)
